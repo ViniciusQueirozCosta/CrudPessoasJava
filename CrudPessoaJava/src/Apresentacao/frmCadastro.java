@@ -28,6 +28,7 @@ public class frmCadastro extends javax.swing.JDialog
     private void initComponents()
     {
 
+        jInternalFrame1 = new javax.swing.JInternalFrame();
         lblNome = new javax.swing.JLabel();
         lblRG = new javax.swing.JLabel();
         lblCPF = new javax.swing.JLabel();
@@ -35,6 +36,19 @@ public class frmCadastro extends javax.swing.JDialog
         txfNome = new javax.swing.JTextField();
         txfCPF = new javax.swing.JTextField();
         txfRG = new javax.swing.JTextField();
+
+        jInternalFrame1.setVisible(true);
+
+        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
+        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
+        jInternalFrame1Layout.setHorizontalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jInternalFrame1Layout.setVerticalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro");
@@ -239,6 +253,7 @@ public class frmCadastro extends javax.swing.JDialog
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCadastrar;
+    private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel lblCPF;
     private javax.swing.JLabel lblNome;
     private javax.swing.JLabel lblRG;

@@ -7,8 +7,8 @@ public class CrudPessoasJava
     public static void main(String[] args)
     {
         
-        Apresentacao.frmPrincipal frmM = new frmPrincipal(null, true);
-        frmM.setVisible(true);
+        Apresentacao.frmPrincipal frmP = new frmPrincipal(null, true);
+        frmP.setVisible(true);
         
     }
     

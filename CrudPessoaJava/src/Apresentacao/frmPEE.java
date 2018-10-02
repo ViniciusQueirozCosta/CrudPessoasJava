@@ -215,7 +215,6 @@ public class frmPEE extends javax.swing.JDialog
     private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnExcluirActionPerformed
     {//GEN-HEADEREND:event_btnExcluirActionPerformed
         ArrayList DadosPessoa = new ArrayList();
-        Pessoa pessoa = new Pessoa();
         DadosPessoa.add(0, txfID.getText());
         Modelo.Controle controle = new Controle();
         controle.ExcluirPessoa(DadosPessoa);
@@ -226,7 +225,6 @@ public class frmPEE extends javax.swing.JDialog
     {//GEN-HEADEREND:event_btnEditarActionPerformed
 
         ArrayList DadosPessoa = new ArrayList();
-        Pessoa pessoa = new Pessoa();
         DadosPessoa.add(0, txfID.getText());
         DadosPessoa.add(1, txfNome.getText());
         DadosPessoa.add(2, txfRG.getText());

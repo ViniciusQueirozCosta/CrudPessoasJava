@@ -62,10 +62,10 @@ public class Controle
             if(pessoa.nome != null) 
             {
                 pessoaDAO.ExcluirPessoa(pessoa);
-                this.mensagem =  "Pessoa excluída com sucesso";
+                this.mensagem =  pessoaDAO.mensagem;
             } 
             else
-                this.mensagem = "Essa pessoa não existe";
+                this.mensagem = validacao.mensagem;
         }
     }
     

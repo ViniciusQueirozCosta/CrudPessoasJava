@@ -67,6 +67,8 @@ public class Controle
             else
                 this.mensagem = validacao.mensagem;
         }
+        else
+            this.mensagem = validacao.mensagem;
     }
     
     public void EditarPessoa(List<String> DadosPessoa)
@@ -91,5 +93,7 @@ public class Controle
             else
                 this.mensagem = pessoaDAO.mensagem;
         }
+        else
+            this.mensagem = validacao.mensagem;
     }
 }

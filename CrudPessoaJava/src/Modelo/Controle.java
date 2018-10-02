@@ -62,11 +62,13 @@ public class Controle
             if(pessoa.nome != null) 
             {
                 pessoaDAO.ExcluirPessoa(pessoa);
-                this.mensagem =  "Pessoa excluída com sucesso";
+                this.mensagem =  pessoaDAO.mensagem;
             } 
             else
-                this.mensagem = "Essa pessoa não existe";
+                this.mensagem = validacao.mensagem;
         }
+        else
+            this.mensagem = validacao.mensagem;
     }
     
     public void EditarPessoa(List<String> DadosPessoa)
@@ -91,5 +93,7 @@ public class Controle
             else
                 this.mensagem = pessoaDAO.mensagem;
         }
+        else
+            this.mensagem = validacao.mensagem;
     }
 }

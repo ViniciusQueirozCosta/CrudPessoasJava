@@ -6,9 +6,12 @@
             <file>file:/C:/Users/vinic/Documents/NetBeansProjects/CrudPessoaJava/src/Apresentacao/frmPEE.java</file>
             <file>file:/C:/Users/vinic/Documents/NetBeansProjects/CrudPessoaJava/src/Modelo/Controle.java</file>
             <file>file:/C:/Users/vinic/Documents/NetBeansProjects/CrudPessoaJava/src/Apresentacao/frmPrincipal.java</file>
+            <file>file:/C:/Users/vinic/Documents/NetBeansProjects/CrudPessoaJava/src/DAL/Conexao.java</file>
             <file>file:/C:/Users/vinic/Documents/NetBeansProjects/CrudPessoaJava/src/Apresentacao/frmCadastro.java</file>
+            <file>file:/C:/Users/vinic/Documents/NetBeansProjects/CrudPessoaJava/src/DAL/intPessoaDAO.java</file>
             <file>file:/C:/Users/vinic/Documents/NetBeansProjects/CrudPessoaJava/src/Modelo/Validacao.java</file>
             <file>file:/C:/Users/vinic/Documents/NetBeansProjects/CrudPessoaJava/src/DAL/PessoaDAO.java</file>
+            <file>file:/C:/Users/vinic/Documents/NetBeansProjects/CrudPessoaJava/src/Modelo/Pessoa.java</file>
         </group>
     </open-files>
 </project-private>

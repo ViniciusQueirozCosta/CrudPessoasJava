@@ -59,7 +59,7 @@ public class Controle
             pessoa.id = validacao.id;
             DAL.PessoaDAO pessoaDAO = new PessoaDAO();
             pessoa = pessoaDAO.PesquisarPessoaPorId(pessoa);
-            if(pessoa.nome != null) 
+            if(pessoa.id != 0) 
             {
                 pessoaDAO.ExcluirPessoa(pessoa);
                 this.mensagem =  pessoaDAO.mensagem;
@@ -82,7 +82,7 @@ public class Controle
             DAL.PessoaDAO pessoaDAO = new PessoaDAO();
             pessoa.id = validacao.id;
             pessoa = pessoaDAO.PesquisarPessoaPorId(pessoa);
-            if(pessoa.nome != null)
+            if(pessoa.id != 0)
             {
                 pessoa.nome = DadosPessoa.get(1);
                 pessoa.rg = DadosPessoa.get(2);

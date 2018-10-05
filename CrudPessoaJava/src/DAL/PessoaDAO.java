@@ -34,7 +34,7 @@ public class PessoaDAO implements intPessoaDAO
         try
         {
             Connection conexaoBD = Conexao.Conectar();
-            String instrucaoSql = "update Pessoas set nome= ?, rg = ?, cpf = ? where id = ?";
+            String instrucaoSql = "update Pessoas set nome=? , rg=? , cpf=?  where id=?";
             PreparedStatement stmt = conexaoBD.prepareStatement(instrucaoSql);
             stmt.setString(1, pessoa.nome);
             stmt.setString(2, pessoa.rg);
@@ -81,9 +81,11 @@ public class PessoaDAO implements intPessoaDAO
             PreparedStatement stmt = conexaoBD.prepareStatement(instrucaoSql);
             stmt.setInt(1, pessoa.id);
             ResultSet resultset = stmt.executeQuery();
+            pessoa.id = 0;
             
             if(resultset.next())
             {
+                pessoa.id = resultset.getInt("id");
                 pessoa.nome = resultset.getString("nome");
                 pessoa.rg = resultset.getString("cpf");
                 pessoa.cpf = resultset.getString("rg");
